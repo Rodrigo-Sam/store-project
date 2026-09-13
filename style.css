@@ -331,3 +331,54 @@ header nav ul li:hover::after {
     background-color: #00f7ff;
     opacity: 0.9;
 }
+
+/* --- RESPONSIVO --- */
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .product-image img {
+    width: 280px !important;
+    height: auto !important;
+  }
+
+  .product-text h1 {
+    font-size: 2rem !important;
+  }
+
+  .product-text p {
+    font-size: 1rem !important;
+  }
+
+  .arrows button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 390px) {
+  header {
+    padding: 15px;
+  }
+
+  header nav {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .product-image img {
+    width: 220px !important;
+  }
+
+  .product-text h1 {
+    font-size: 1.6rem !important;
+  }
+  
+  .indicators {
+    bottom: 20px;
+  }
+}
